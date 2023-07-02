@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/">
+    <title>shoppers.</title>
+</head>
+<style>
+    * {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 0%;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        /* background-color: beige; */
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    span {
+        margin: 8px;
+        color: gray;
+        font-family: Arial;
+    }
+    
+    .home:active {
+        color: blue;
+    }
+    
+    span:hover {
+        background-color: rgb(228, 228, 239);
+        border-radius: 6px;
+        color: black;
+        /* padding: 2px; */
+    }
+    
+    nav {
+        display: flex;
+        position: sticky;
+        justify-content: space-between;
+        /* border: 1px solid black; */
+        padding: 7px;
+    }
+    
+    img {
+        width: 130px;
+        height: 40px;
+    }
+    
+    .nav-middle {
+        margin-top: 15px;
+        font-size: 15px;
+        width: 530px;
+        font-weight: bolder;
+    }
+    
+    .nav-right {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    
+    button {
+        background-color: #d6293e;
+        border: none;
+        padding: 7px;
+        border-radius: 4px;
+        color: white;
+    }
+    
+    button:hover {
+        background-color: #79121e;
+    }
+    
+    .nav-bottom {
+        padding: 8px;
+        background-color: rgb(225, 225, 239);
+    }
+    /* section star from hear */
+    
+    .img-container {
+        margin-top: 5px;
+        margin-left: 10px;
+        display: flex;
+    }
+    
+    #img1 {
+        margin-left: -9px;
+        width: 100%;
+        height: 61vh;
+        border-radius: 4px;
+        background: fixed;
+        color: white;
+    }
+    
+    #img1:hover {
+        width: 101%;
+        height: 62vh;
+        transition: 8sec;
+    }
+    
+    #img2 {
+        background: fixed;
+        border-radius: 4px;
+        margin-left: -15px;
+        width: 107%;
+        height: 30vh;
+    }
+    
+    #img2:hover {
+        width: 110%;
+        height: 31vh;
+        transition: 8sec;
+    }
+    
+    .img-text1 {
+        position: absolute;
+        top: 75%;
+        color: white;
+    }
+    /* small container star hear */
+    
+    .container2 {
+        margin-top: 20px;
+        padding: 10px;
+    }
+    
+    .img-cont1 {
+        padding: 20px;
+        width: 400px;
+        height: 400px;
+    }
+    
+    #img-cont1 {
+        display: flex;
+        border-radius: 10px;
+        width: 380px;
+        height: 250px;
+    }
+    
+    #download-button {
+        margin-left: 400px;
+        background-color: rgb(212, 212, 246);
+        color: black;
+    }
+    
+    #download-button:hover {
+        background-color: blue;
+        color: white;
+    }
+    /* footer portion start from hear */
+    
+    #footer-img1 {
+        background: url(/img/footer-img1.jpg);
+        background-size: cover;
+        width: 190px;
+        height: 180px;
+        border-radius: 10px;
+    }
+    
+    #footer-img2 {
+        background: url(/img/footer-img2.jpg);
+        background-size: cover;
+        width: 190px;
+        height: 180px;
+        border-radius: 10px;
+    }
+    
+    #footer-img3 {
+        background: url(/img/footer-img3.jpg);
+        background-size: cover;
+        width: 190px;
+        height: 180px;
+        border-radius: 10px;
+    }
+    
+    #footer-img4 {
+        background: url(/img/footer-img4.jpg);
+        background-size: cover;
+        width: 190px;
+        height: 180px;
+        border-radius: 10px;
+    }
+    
+    .figcaption-text {
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 8px;
+        position: relative;
+        top: 150px;
+        padding: 8px;
+        background-color: red;
+        color: white;
+        color: short;
+    }
+    
+    .figcaption-para {
+        color: black;
+        margin-top: 5px;
+    }
+    /* main footer start from hear */
+    
+    .footer1 {
+        display: flex;
+    }
+    
+    .footer2 {
+        display: flex;
+        background-color: black;
+        color: white;
+        margin-top: 50px;
+        margin-right: -30px;
+        margin-left: -30px;
+    }
+    
+    .footer-img {
+        margin-top: 20px;
+    }
+    
+    p {
+        width: 380px;
+    }
+    
+    .email-address {
+        width: 300px;
+        height: 60px;
+    }
+    
+    #email-address {
+        width: 140px;
+        font-size: 10px;
+        height: 25px;
+    }
+    
+    .footer-button {
+        margin-left: -13px;
+        margin-top: 5px;
+    }
+    /* main footer start from hear*/
+    
+    .footer3 {
+        background-color: black;
+        color: white;
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        padding: 30px;
+        margin: -30px;
+    }
+    
+    .footer-title {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    
+    .footer-container {
+        display: flex;
+        width: 1500px;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        padding-top: 20px;
+    }
+</style>
+
+<body>
+    <header>
+        <div>
+            <span>About</span>
+            <span>Forum</span>
+            <span>Buy now!</span>
+            <span>Login/join</span>
+        </div>
+        <div>
+
+            <span>A-</span>
+            <span>A</span>
+            <span>A+</span>
+
+            <span class="bi bi-facebook"></span>
+            <span class="bi bi-twitter"></span>
+            <span class="bi bi-linkedin"></span>
+            <span class="bi bi-youtube"></span>
+        </div>
+    </header>
+    <hr>
+    <nav>
+        <div>
+            <img src="/img/brand.png" alt="">
+        </div>
+        <div class="nav-middle">
+
+            <span class="home">Home<i class="bi bi-chevron-down"></i></span>
+            <span>Page<i class="bi bi-chevron-down"></i></span>
+            <span>Post<i class="bi bi-chevron-down"></i></span>
+            <span>Lifestyle<i class="bi bi-chevron-down"></i></span>
+            <span>Dashboad<i class="bi bi-chevron-down"></i></span>
+
+        </div>
+        <div class="nav-right">
+            <button>Subscribe!</button>
+            <span class="bi bi-search"></span>
+            <span class="bi bi-text-right"></span>
+        </div>
+    </nav>
+    <div class=" nav-bottom">
+        <button style="background-color: blue; ">Tranding!</button>
+    </div>
+    <section>
+        <div class="img-container">
+            <div class="img-container1">
+                <img src="/img/container-img-1.jpg" alt="" id="img1">
+                <div class="img-text1">
+                    <h1 style="font-size: 40px;">Ten tell-tale signs you need</h1>
+                    <h1 style="font-size: 40px;"></h1>
+                </div>
+            </div>
+            <div>
+                <img src="/img/container-img-2.jpg" alt="" id="img2">
+                <img src="/img/container-img-3.jpg" alt="" id=img2>
+            </div>
+        </div>
+        <!-- secction portion start from hear -->
+        <div class="container2">
+
+            <div>
+                <span class="bi bi-hourglass-top" style="color: black; font-size: 20px; font-weight: bolder;"> Today's top highlights</span>
+                <p>Latest breaking news, pictures, videos, and special reports</p>
+            </div>
+            <div class="main" style="display:flex ;">
+
+                <div class="img-cont1">
+                    <img src="/img/img-cont1.jpg" alt="" id="img-cont1">
+                    <h1 style="font-size: 22px; ">12 worst types of business accounts you follow on Twitter
+                    </h1>
+                    <span>He moonlights difficult engrossed it, sportsmen. Interested has all Devonshire difficulty gay assistance joy. Unaffected at ye of compliment alteration to</span>
+
+                </div>
+                <div class="img-cont1">
+                    <img src="/img/img-cont2.jpg" alt="" id="img-cont1">
+                    <h1 style="font-size: 22px; ">Dirty little secrets about the business industry
+                    </h1>
+                    <span>Place voice no arises along to. Parlors waiting so against me no. Wishing calling is warrant settled was lucky. Express besides it present if at an opinion visitor.</span>
+
+                </div>
+            </div>
+            <div class="main" style="display:flex ;">
+                <div class="img-cont1">
+                    <img src="/img/img-cont1.jpg" id="img-cont1">
+                    <h1 style="font-size: 22px; ">Bad habits that people in the industry need to quit
+                    </h1>
+                    <span>For who thoroughly her boy estimating conviction. Removed demands expense account in outward tedious do. Particular way thoroughly unaffected</span>
+
+                </div>
+                <div class="img-cont1">
+                    <img src="/img/img-cont2.jpg" alt="" id="img-cont1">
+                    <h1 style="font-size: 22px; ">Around the web: 20 fabulous infographics about business
+                    </h1>
+                    <span>Projection favorable Mrs can be projecting own. Thirty it matter enable become admire in giving. See resolved goodness felicity shy civility domestic had but.</span>
+
+                </div>
+            </div>
+            <div class="main" style="display:flex ;">
+                <div class="img-cont1">
+                    <img src="/img/img-cont3.jpg" alt="" id="img-cont1">
+                    <h1 style="font-size: 22px; ">7 common mistakes everyone makes while traveling
+                    </h1>
+                    <span>Drawings offended yet answered Jennings perceive laughing six did far. Rooms oh fully taken by worse do. Points afraid but may end law lasted.</span>
+
+                </div>
+                <div class="img-cont1">
+                    <img src="/img/img-cont4.jpg" alt="" id="img-cont1">
+                    <h1 style="font-size: 22px; ">5 investment doubts you should clarify</h1>
+                    <span>Was out laughter raptures returned outweigh. Luckily cheered colonel I do we attack highest enabled. Tried law yet style child. The bore of true of no be deal.</span>
+
+                </div>
+            </div>
+        </div>
+        <!-- section portion ends from hear -->
+        <button id="download-button">Load more post<i class="bi bi-download"></i></button >
+            <hr>
+
+    </section>
+    <footer>
+        <div class="footer1">
+
+            <div>
+                <figcaption class="fig-img" id="footer-img1">
+                    <span class="figcaption-text"> Shorts</span>
+                </figcaption>
+                <span class="figcaption-para">Skills that you can learn from business</span>
+            </div>
+        <div>
+            <figcaption class="fig-img" id="footer-img2">
+                <span class="figcaption-text">Marketing</span>
+            </figcaption>
+            <span class="figcaption-para">Skills that you can learn from business</span>
+        </div>
+        <div>
+            <figcaption class="fig-img" id="footer-img3">
+                <span class="figcaption-text">photography</span>
+            </figcaption>
+            <span class="figcaption-para">Skills that you can learn from business</span>
+        </div>
+        <div>
+            <figcaption class="fig-img" id="footer-img4">
+                <span class="figcaption-text">Tecnology</span>
+            </figcaption>
+            <span class="figcaption-para">Skills that you can learn from business</span>
+        </div>
+    </div>
+        
+    <div class="footer2">
+         <div class="footer-container">
+
+             <div>
+                 <div class="footer-img">
+                     <img src="/img/footer-brand-logo.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <p>The next-generation blog, news, and magazine theme for you to start sharing your stories today! This Bootstrap 5 based theme is ideal for all types of sites that deliver the news.</p>
+                </div>
+                <div class="email-address">
+                    <input type="email" placeholder="Enter your email address" id="email-address">
+                    <button class="footer-button">Subscribe</button></div>
+        </div>
+        </div>
+        </div>
+        <div class="footer3">
+            <div>
+                <div class="footer-title">Recent post</div>
+                <div>Business</div>
+                <div>Up-coming business bloggers, you need to watch</div>
+                <div>by Dennis</div>
+                <div>Apr 06, 2022</div>
+                <div>Marketing</div>
+                <div>How did we get here? The history of the business told through tweets</div>
+            </div>
+            <div>
+                <div class="footer-title">Navigation</div>
+                <div>Features</div>
+                <div>Style Guide</div>
+                <div>Contact us</div>
+                <div>Get Theme</div>
+                <div>Support</div>
+                <div>Privacy Policy</div>
+                <div>Newslette</div>
+            </div>
+            <div>
+                <div class="footer-title">Get Regular Updates</div>
+                <div>WhatsApp</div>
+                <div>YouTube</div>
+                <div>Website Notifications</div>
+                <div>Newsletters</div>
+                <div>Podcasts</div>
+            </div>
+            <div>
+                <div class="footer-title">Our mobile App</div>
+                <div>Download our App and get the latest Breaking News Alerts and latest headlines and daily articles near</div>
+            </div>
+        </div>
+
+        </footer>
+
+</body>
+
+</html>
